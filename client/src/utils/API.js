@@ -1,14 +1,13 @@
 import axios from 'axios'
 
 export default {
-  // API request to server side
   register(data) {
-    return axios.post('/auth/register', data)
+    return axios.post('https://api712217.herokuapp.com/auth/register', data)
   },
   login(data) {
-    return axios.post('/auth/login', data)
+    return axios.post('https://api712217.herokuapp.com/auth/login', data)
   },
   loadUser(headers) {
-    return axios.get('/auth/user', headers)
+    return axios.get('https://api712217.herokuapp.com/auth/user', headers)
   },
 }

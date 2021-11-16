@@ -6,7 +6,6 @@ import Logout from './Logout'
 export const NavBar = () => {
   const { currentUser, isAuthenticated } = useSelector((state) => state.auth)
 
-  // helper to show links on Navbar if user is authenticated
   const showLinks = () => {
     if (isAuthenticated) {
       return (

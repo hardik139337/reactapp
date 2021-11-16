@@ -7,7 +7,6 @@ import { store } from './store'
 import './style.css'
 
 reactDOM.render(
-  // Wrap all APP with the react redux provider and pass the redux store to have access to global state
   <Provider store={store}>
     <App />
   </Provider>,

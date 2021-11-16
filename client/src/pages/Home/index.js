@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 export const Home = () => {
-  // access to the isAuthenticated property from the auth reducer state
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
 
   const showLoginBtn = () => {
@@ -24,14 +23,7 @@ export const Home = () => {
     <div>
       <Message className='message-container' size='huge' secondary='true'>
         <Header size='huge'> Home</Header>
-        <p style={{ marginBottom: '5px' }}>
-          This is a Boiler Plate MERN application with authentication using JSON
-          Web Tokens.
-        </p>
-        <p style={{ margin: '5px 0 25px' }}>
-          This APP was design to be used as a starting point for any developer
-          looking to integrate authentication with a MERN application.
-        </p>
+        <p style={{ marginBottom: '5px' }}>welcome</p>
         <Link to='/login'>{showLoginBtn()}</Link>
       </Message>
     </div>

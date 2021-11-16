@@ -3,7 +3,6 @@ import { GET_ERRORS, CLEAR_ERRORS } from '../actions/types'
 const initialState = {
   message: '',
 }
-// reducer to handle error Actions
 export default (state = initialState, action) => {
   switch (action.type) {
     case GET_ERRORS:

@@ -6,7 +6,6 @@ import { loginUser } from '../../actions/authActions'
 import { Link } from 'react-router-dom'
 
 const Login = (props) => {
-  // access to the isAuthenticated property from the auth reducer state
   const { isAuthenticated } = useSelector((state) => state.auth)
 
   const dispatch = useDispatch()

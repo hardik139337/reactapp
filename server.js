@@ -4,8 +4,10 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 const config = require('./config')
 const routes = require('./routes')
+var cors = require('cors')
 
 const app = express()
+app.use(cors())
 
 // middleware to parse data
 app.use(express.urlencoded({ extended: true }))
